@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+ion-icon {
+    font-size: 15px;
+    color: rgb(3, 192, 3);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+body h1 {
+    font-family: 'Righteous', cursive;
+}
