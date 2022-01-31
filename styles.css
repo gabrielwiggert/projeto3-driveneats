@@ -7,6 +7,10 @@ ion-icon {
     color: rgb(3, 192, 3);
 }
 
+a:link {
+    text-decoration: none;
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
@@ -94,10 +98,27 @@ footer button {
     width: 80vw;
     border-radius: 100px;
     border: none;
-    color: grey;
+    background-color: #CBCBCB;
 }
 
 footer button h3 {
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+.clicado {
+    background-color: #32B72F;
+    font-weight: bold;
+}
+
+.selecionado {
+    outline: 5px solid #32B72F;
+}
+
+.selecionado2 {
+    outline: 5px solid #32B72F;
+}
+
+.selecionado3 {
+    outline: 5px solid #32B72F;
 }
