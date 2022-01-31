@@ -4,9 +4,9 @@ let selected3 = 0;
 let prato = "";
 let bebida = "";
 let sobremesa = "";
-let preco1;
-let preco2;
-let preco3;
+let preco1 = "";
+let preco2 = "";
+let preco3 = "";
 let total = 0;
 
 function selecionarItem(opcao) {
@@ -18,7 +18,7 @@ function selecionarItem(opcao) {
     opcao.classList.add('selecionado');
     selected1 = 1;
 
-    const aux = opcao.querySelector("h2");
+    let aux = opcao.querySelector("h2");
     prato = aux.innerHTML;
 
     aux = opcao.querySelector("strong");
@@ -26,7 +26,7 @@ function selecionarItem(opcao) {
 
     if (selected1 && selected2 && selected3) {
         const state = document.querySelector(".botao-principal");
-        let texto = state.querySelector("h3");
+        const texto = state.querySelector("h3");
         texto.innerHTML = "Fechar pedido";
         state.classList.add('clicado');
     }
@@ -41,7 +41,7 @@ function selecionarItem2(opcao) {
     opcao.classList.add('selecionado2');
     selected2 = 1;
 
-    const aux = opcao.querySelector("h2");
+    let aux = opcao.querySelector("h2");
     bebida = aux.innerHTML;
 
     aux = opcao.querySelector("strong");
@@ -49,7 +49,7 @@ function selecionarItem2(opcao) {
 
     if (selected1 && selected2 && selected3) {
         const state = document.querySelector(".botao-principal");
-        let texto = state.querySelector("h3");
+        const texto = state.querySelector("h3");
         texto.innerHTML = "Fechar pedido";
         state.classList.add('clicado');
     }
@@ -64,7 +64,7 @@ function selecionarItem3(opcao) {
     opcao.classList.add('selecionado3');
     selected3 = 1;
 
-    const aux = opcao.querySelector("h2");
+    let aux = opcao.querySelector("h2");
     sobremesa = aux.innerHTML;
 
     aux = opcao.querySelector("strong");
@@ -72,7 +72,7 @@ function selecionarItem3(opcao) {
 
     if (selected1 && selected2 && selected3) {
         const state = document.querySelector(".botao-principal");
-        let texto = state.querySelector("h3");
+        const texto = state.querySelector("h3");
         texto.innerHTML = "Fechar pedido";
         state.classList.add('clicado');
     }
